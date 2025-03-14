@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holly Hortsch Project 4</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5e45cff0c3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Sidebar / Top Navbar -->
+        <nav class="sidebar">
+            <element class="logo"><img src="HWlogo.png"></element>
+            <br>
+            <h2>holly's world</h2>
+            <span class="menu-btn" onclick="toggleMenu()">☰</span>
+            <ul>
+                <li><a href="index.html"><i class="fa-regular fa-star"></i> home</a></li>
+                <li><a href="about.html"><i class="fa-regular fa-user"></i> about</a></li>
+                <li><a href="resume.html"><i class="fa-regular fa-file"></i> resume</a></li>
+                <li><a href="#" onclick="openPopup()"><i class="fa-regular fa-message"></i> contact</a></li>
+                <li>
+                    <a href="#" class="dropdown-btn" onclick="toggleDropdown()"><i class="fa-regular fa-heart"></i> socials</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://instagram.com/hollyhortsch" target="_blank">instagram</a></li>
+                        <li><a href="https://www.tiktok.com/@onlineholly?is_from_webapp=1&sender_device=pc" target="_blank">tiktok</a></li>
+                        <li><a href="https://www.pinterest.com/hollyhortsch/" target="_blank">pinterest</a></li>
+                        <li><a href="https://open.spotify.com/user/heyoholly" target="_blank">spotify</a></li>
+                        <li><a href="https://substack.com/@onlineholly" target="_blank">substack</a></li>
+                        <li><a href="https://www.linkedin.com/in/holly-hortsch-8699822aa/" target="_blank">linkedin</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="content">
+            <div class="post">
+                <h2>about holly</h2>
+                <p>I am currently a junior at The University of Oregon and studying Sociology with a minor in Business Administration. At UO I work with the Nontraditional Student Program, where I create digital content to advertise evenst and resources. I have always had a passion for student engegement, participating in leadership classes and student engagement at my past schools. Being a nontraditional student myself, having taken a break from school and trasnfered to UO, I am glad to work for a department that specifically represents often underepresented students such as student parents, veterans, and trasnfer students. In my future I plan to continue to pursue a career in student engagement at a university level.</p>
+                <br>
+                <p>In my free time, I enjoy being outside and spending time with my friends and family. My boyfriend Ben and I love to explore around our home state of Oregon whenever we can, often visiting Portland and the coast. I also love to go "home" whenever I have time to -- home being my family's farm where my younger sisiter Heidi currently lives.</p>
+                <br>
+                <p>I've been interested in design for as long as I can remember, and like to have a creative outlet on my tumblr blog onlineholly.com, as well as on my Instagram and Pinterest. I am currently planning to start a podcast this summer as well.</p>
+                
+                <br> 
+
+                <div class="gallery-container">
+                    <div class="gallery">
+                        <a href="#"><img src="posts/about/holly.jpg" id="imgeffect1" alt="holly"></a>
+                    </div>
+                    
+                    <div class="gallery">
+                        <a href="#"><img src="posts/about/city.jpg" id="imgeffect2" alt="ben and holly in portland"></a>
+                    </div>
+                    
+                    <div class="gallery">
+                        <a href="#"><img src="posts/about/o.jpg" id="imgeffect1" alt="holly at autzen"></a>
+                    </div>
+                    
+                    <div class="gallery">
+                        <a href="#"><img src="posts/about/beach.jpg" id="imgeffect2" alt="ben and holly on the beach"></a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Right Sidebar with Two Static Boxes -->
+        <aside class="right-section">
+            <div class="box1">
+                a landing <i>space</i>
+            </div>
+            <div class="box2">
+                 ･ ｡ﾟ☆: *.☽ .* :☆ﾟ. 
+            </div>
+        </aside>
+    </div>
+
+    <!-- Contact Form Popup -->
+    <div id="contactPopup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h2>contact:</h2>
+            <form>
+                <label for="name">name:</label>
+                <input type="text" id="name" required>
+
+                <label for="email">email:</label>
+                <input type="email" id="email" required>
+
+                <label for="message">message:</label>
+                <textarea id="message" rows="4" required></textarea>
+
+                <button type="submit">send</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

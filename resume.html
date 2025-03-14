@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holly Hortsch Project 4</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5e45cff0c3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Sidebar / Top Navbar -->
+        <nav class="sidebar">
+            <element class="logo"><img src="HWlogo.png"></element>
+            <br>
+            <h2>holly's world</h2>
+            <span class="menu-btn" onclick="toggleMenu()">☰</span>
+            <ul>
+                <li><a href="index.html"><i class="fa-regular fa-star"></i> home</a></li>
+                <li><a href="about.html"><i class="fa-regular fa-user"></i> about</a></li>
+                <li><a href="resume.html"><i class="fa-regular fa-file"></i> resume</a></li>
+                <li><a href="#" onclick="openPopup()"><i class="fa-regular fa-message"></i> contact</a></li>
+                <li>
+                    <a href="#" class="dropdown-btn" onclick="toggleDropdown()"><i class="fa-regular fa-heart"></i> socials</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://instagram.com/hollyhortsch" target="_blank">instagram</a></li>
+                        <li><a href="https://www.tiktok.com/@onlineholly?is_from_webapp=1&sender_device=pc" target="_blank">tiktok</a></li>
+                        <li><a href="https://www.pinterest.com/hollyhortsch/" target="_blank">pinterest</a></li>
+                        <li><a href="https://open.spotify.com/user/heyoholly" target="_blank">spotify</a></li>
+                        <li><a href="https://substack.com/@onlineholly" target="_blank">substack</a></li>
+                        <li><a href="https://www.linkedin.com/in/holly-hortsch-8699822aa/" target="_blank">linkedin</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="content">
+            <div class="post">
+                <div class="resgrid">
+                    <div class="resinfo">
+                        <h3><strong>Holly Hortsch</strong></h3>
+                        <p><em>(she/her)</em></p>
+                        <br>
+                        <p><strong>Email:</strong> hollyhortsch@gmail.com</p>
+                        <p><strong>Phone:</strong> +123 456 7890</p>
+                        <p><strong>Website:</strong> <a href="https://onlineholly.com">www.onlineholly.com</a></p>
+                    </div>
+                    <div class="res">
+                        <div class="ressection">
+                            <h3>Summary</h3>
+                            <br>
+                            <p>I am currently pursuing a B.S. in Sociology with a minor in Business Administration while working in digital marketing and student engagement at The University of Oregon. </p>
+                            <img src="posts/resumepics/headshot.png" alt="headshot">
+                            <h3>Skills:</h3>
+                            <br>
+                            <ul>
+                                <li>Design</li>
+                                <li>Project management</li>
+                                <li>Digital marketing</li>
+                                <li>Sustomer Service</li>
+                                <li>Strong communication</li>
+                            </ul>
+                        </div>
+                        <div class="ressection">
+                            <h3>Experience</h3>
+                            <br>
+                            <p><strong>Nontraditional Student Program Digital Media Specialist -- University of Oregon</strong></p>
+                            <p>January 2025 - Present</p>
+                            <p>Curates original designs and advertising for the UO Nontraditional Student Program and NSU.
+                                Contributes to promoting equity and diversity on campus through office hours at NSU in student union.
+                                Attends Nontraditional student events and engages with UO community, faculty, and administration in a professional manner.</p>
+
+                            <br>
+                            <p><strong>Record Label Marketing Intern -- Tender Loving Empire Records</strong></p>
+                            <p>January 2024 - December 2024</p>
+                            <p>Assisted in providing and executing marketing plans for label artists’ album rollouts
+                                Managed the label’s Instagram, created original copy and content for the profile to promote new releases and artists’ work
+                                Communicated with label contacts to produce vinyl albums and release music on DSPs.
+                                Uploaded and organized content for main website.</p>
+
+                            <br>
+                            <p><strong>Student Engagement, Marketing Team -- Portland Community College</strong></p>
+                            <p>Sept. 2023 - June 2024</p>
+                            <p>Created original marketing campaigns and digital content to advertise student events.
+                                Worked at in person events such as Weeks of Welcome that promote community and belonging on campus.
+                                Collaborated with other marketing team members on projects; gave and received feedback with co-workers.</p>
+                        </div>
+                        <div class="ressection">
+                            <h3>Education</h3>
+                            <br>
+                            <p><strong>B.S. in Sociology, Business Administration minor -- University of Oregon</strong></p>
+                            <p><em>2024-2026</em></p>
+                            <ul>
+                                <li>Currently Enrolled</li>
+                                <li>Nontraditional Student Union Digital Marketing Specialist</li>
+                            </ul>
+
+                            <br>
+                            <p><strong>A.A. in General Studies -- Portland Community College</strong></p>
+                            <p><em>2022-2024</em></p>
+                            <ul>
+                                <li>Student Engagement Marketing Team</li>
+                                <li>Sustainability and Basic Needs Staff</li>
+                            </ul>
+
+                            <br>
+                            <p><strong>Crescent Valley High School</strong></p>
+                            <p><em>2015-2018</em></p>
+                            <ul>
+                                <li>Student Council Social Media Coordinator</li>
+                                <li>Yearbook Photographer</li>
+                                <li>Leadership Event Planner</li>
+                            </ul>
+
+                            <a href ="https://communications.uoregon.edu/uo-brand/marks-logos/university-marks"><img src="posts/resumepics/duck.png"  alt="UO logo"></a>
+                            <br>
+                            <a href="https://www.oregonlive.com/politics/2022/11/portland-community-college-wins-voter-support-for-record-bond-measure.html"><img src="posts/resumepics/pcc.jpeg"  alt="PCC cascade campus"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Right Sidebar with Two Static Boxes -->
+        <aside class="right-section">
+            <div class="box1">
+                a landing <i>space</i>
+            </div>
+            <div class="box2">
+                 ･ ｡ﾟ☆: *.☽ .* :☆ﾟ. 
+            </div>
+        </aside>
+    </div>
+
+    <!-- Contact Form Popup -->
+    <div id="contactPopup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h2>contact:</h2>
+            <form>
+                <label for="name">name:</label>
+                <input type="text" id="name" required>
+
+                <label for="email">email:</label>
+                <input type="email" id="email" required>
+
+                <label for="message">message:</label>
+                <textarea id="message" rows="4" required></textarea>
+
+                <button type="submit">send</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
