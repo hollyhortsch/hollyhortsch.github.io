@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holly Hortsch Project 4</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5e45cff0c3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Sidebar / Top Navbar -->
+        <nav class="sidebar">
+            <element class="logo"><img src="../HWlogo.png"></element>
+            <br>
+            <h2>holly's world</h2>
+            <span class="menu-btn" onclick="toggleMenu()">☰</span>
+            <ul>
+                <li><a href="../index.html"><i class="fa-regular fa-star"></i> home</a></li>
+                <li><a href="../about.html"><i class="fa-regular fa-user"></i> about</a></li>
+                <li><a href="../resume.html"><i class="fa-regular fa-file"></i> resume</a></li>
+                <li><a href="#" onclick="openPopup()"><i class="fa-regular fa-message"></i> contact</a></li>
+                <li>
+                    <a href="#" class="dropdown-btn" onclick="toggleDropdown()"><i class="fa-regular fa-heart"></i> socials</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://instagram.com/hollyhortsch" target="_blank">instagram</a></li>
+                        <li><a href="https://www.tiktok.com/@onlineholly?is_from_webapp=1&sender_device=pc" target="_blank">tiktok</a></li>
+                        <li><a href="https://www.pinterest.com/hollyhortsch/" target="_blank">pinterest</a></li>
+                        <li><a href="https://open.spotify.com/user/heyoholly" target="_blank">spotify</a></li>
+                        <li><a href="https://substack.com/@onlineholly" target="_blank">substack</a></li>
+                        <li><a href="https://www.linkedin.com/in/holly-hortsch-8699822aa/" target="_blank">linkedin</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="content">
+            <div class="post">
+                <h2>february photos</h2>
+                
+                <div class="gallery-container">
+                    <div class="gallery-item">
+                        <img src="../posts/febpics/ootd.jpg" alt="ootd">
+                        <div class="gallery-item-overlay">computer lab basement ootd</div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="../posts/febpics/portland.jpg" alt="portland">
+                        <div class="gallery-item-overlay">me and ben in portland</div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="../posts/febpics/notion.jpg" alt="notion">
+                        <div class="gallery-item-overlay">i love notion</div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="../posts/febpics/burgers.jpg" alt="burgers">
+                        <div class="gallery-item-overlay">mmm.. burgers....</div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="../posts/febpics/heidi.jpg" alt="heidi">
+                        <div class="gallery-item-overlay">heidi found me a rare winter iced berry redbull!</div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="../posts/febpics/pasta.jpg" alt="pasta">
+                        <div class="gallery-item-overlay">v day dinner!</div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="../posts/febpics/cake.jpg" alt="cake">
+                        <div class="gallery-item-overlay">the yummiest and prettiest bday cake i've ever had</div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="../posts/febpics/pieshop.jpg" alt="pieshop">
+                        <div class="gallery-item-overlay">ben and i at a pie shop in portland </div>
+                    </div>
+                  </div>
+
+                <br>
+                <div class="postinfo">
+                    <div class="postdate">3/8/25</div>
+                    <div class="posticons"> 
+                        <a href="/1"><i class="fa-solid fa-comment"></i></a> 
+                        <p hidden class="text">p4/2.html</p>
+                        <button onclick="copyText(event)"><i class="fa-solid fa-share"></i></button>
+                        <i class="fa-solid fa-hashtag"></i> pictures
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+               <h2>comments:</h2>
+               <form id="comment-form">
+                <input type="text" id="username" placeholder="your name" required><br><br>
+                <textarea id="comment" placeholder="your comment" required></textarea><br><br>
+                <button type="submit">Post</button>
+            </form>
+            <br>
+            <hr>
+            <br>
+            <div id="comments-container"></div> 
+            </div>
+        </main>
+
+        <!-- Right Sidebar with Two Static Boxes -->
+        <aside class="right-section">
+            <div class="box1">
+                a landing <i>space</i>
+            </div>
+            <div class="box2">
+                 ･ ｡ﾟ☆: *.☽ .* :☆ﾟ. 
+            </div>
+        </aside>
+    </div>
+
+    <!-- Contact Form Popup -->
+    <div id="contactPopup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h2>contact:</h2>
+            <form>
+                <label for="name">name:</label>
+                <input type="text" id="name" required>
+
+                <label for="email">email:</label>
+                <input type="email" id="email" required>
+
+                <label for="message">message:</label>
+                <textarea id="message" rows="4" required></textarea>
+
+                <button type="submit">send</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>
